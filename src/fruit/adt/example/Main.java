@@ -6,7 +6,7 @@ record FruitSalad(
     CherryVariety cherries
 ) { }
 
-sealed interface FruitSnack permits Apple, Banana, Cherries { }
+sealed interface FruitSnack { }
 record Apple(AppleVariety variety) implements FruitSnack { }
 record Banana(BananaVariety variety) implements FruitSnack { }
 record Cherries(CherryVariety variety) implements FruitSnack { }
