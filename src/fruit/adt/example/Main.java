@@ -51,7 +51,8 @@ public class Main {
       case FruitSalad(var apple, var banana , var cherries)
         when banana.equals(BananaVariety.MANZANO) && cherries.equals(CherryVariety.BING) ->
           "I both love and hate this.";
-      default -> "It will do.";
+      default ->
+        "It will do.";
     };
   }
 
