@@ -30,7 +30,7 @@ public class Main {
       case Cherries(var variety) when variety.equals(CherryVariety.BING) ->
         "Those are my favourite cherries.";
       default ->
-          "It will do.";
+        "It will do.";
     };
   }
 
