@@ -19,12 +19,18 @@ public class Main {
 
   String pickySnackerRemark(FruitSnack snack) {
     return switch (snack) {
-      case Apple(var variety) when variety.equals(AppleVariety.FUJI) ->"That's my favourite apple.";
-      case Apple(var variety) when variety.equals(AppleVariety.GOLDEN_DELICIOUS) ->"I can't stand Golden Delicious apples.";
-      case Banana(var variety) when variety.equals(BananaVariety.CAVENDISH) ->"That's my favourite banana.";
-      case Banana(var variety) when variety.equals(BananaVariety.MANZANO) ->"Manzano is my least favourite banana.";
-      case Cherries(var variety) when variety.equals(CherryVariety.BING) ->"Those are my favourite cherries.";
-      default -> "It will do.";
+      case Apple(var variety) when variety.equals(AppleVariety.FUJI) ->
+        "That's my favourite apple.";
+      case Apple(var variety) when variety.equals(AppleVariety.GOLDEN_DELICIOUS) ->
+        "I can't stand Golden Delicious apples.";
+      case Banana(var variety) when variety.equals(BananaVariety.CAVENDISH) ->
+        "That's my favourite banana.";
+      case Banana(var variety) when variety.equals(BananaVariety.MANZANO) ->
+        "Manzano is my least favourite banana.";
+      case Cherries(var variety) when variety.equals(CherryVariety.BING) ->
+        "Those are my favourite cherries.";
+      default ->
+          "It will do.";
     };
   }
 
