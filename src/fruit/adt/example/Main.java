@@ -18,7 +18,6 @@ enum CherryVariety {MONTMORENCY, BING}
 public class Main {
 
   String pickySnackerRemark(FruitSnack snack) {
-    // fruit.adt.example.FruitSnack snack = new fruit.adt.example.Apple(fruit.adt.example.AppleVariety.GOLDEN_DELICIOUS);
     return switch (snack) {
       case Apple(var variety) when variety.equals(AppleVariety.FUJI) ->"That's my favourite apple.";
       case Apple(var variety) when variety.equals(AppleVariety.GOLDEN_DELICIOUS) ->"I can't stand Golden Delicious apples.";
@@ -30,7 +29,6 @@ public class Main {
   }
 
   String pickyCustomerReaction(FruitSalad salad) {
-    //var salad = new fruit.adt.example.FruitSalad(fruit.adt.example.AppleVariety.GOLDEN_DELICIOUS,fruit.adt.example.BananaVariety.CAVENDISH, fruit.adt.example.CherryVariety.MONTMORENCY);
     return switch (salad) {
       case FruitSalad(var apple, var banana , var cherries)
         when apple.equals(AppleVariety.FUJI) && banana.equals(BananaVariety.CAVENDISH) && cherries.equals(CherryVariety.BING) ->
